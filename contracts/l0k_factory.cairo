@@ -19,7 +19,7 @@ func PairCreated(token0 : felt, token1 : felt, pair : felt, index : felt):
 end
 
 #
-# Storage
+# Storage methods
 #
 
 @storage_var
