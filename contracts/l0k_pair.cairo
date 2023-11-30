@@ -45,6 +45,12 @@ func name{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}() -
 end
 
 @view
+func class{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}() -> (class : felt):
+    let (name) = ERC20.name()
+    return (name)
+end
+
+@view
 func symbol{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}() -> (symbol : felt):
     let (symbol) = ERC20.symbol()
     return (symbol)
