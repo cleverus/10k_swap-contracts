@@ -2,6 +2,7 @@
 
 %lang starknet
 
+#
 @contract_interface
 namespace Il0kFactory:
     func feeTo() -> (feeTo : felt):
