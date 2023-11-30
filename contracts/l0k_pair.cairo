@@ -99,13 +99,7 @@ func transferFrom{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_
     return (TRUE)
 end
 
-@external
-func transferTo{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(
-    sender : felt, recipient : felt, amount : Uint256
-) -> (success : felt):
-    ERC20.transfer_from(sender, recipient, amount)
-    return (TRUE)
-end
+#
 
 @external
 func approve{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(
