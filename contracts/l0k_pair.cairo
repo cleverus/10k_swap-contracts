@@ -37,15 +37,10 @@ from interfaces.Il0kFactory import Il0kFactory
 #
 # ERC20 === start ===
 #
+#
 
 @view
 func name{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}() -> (name : felt):
-    let (name) = ERC20.name()
-    return (name)
-end
-
-@view
-func class{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}() -> (class : felt):
     let (name) = ERC20.name()
     return (name)
 end
