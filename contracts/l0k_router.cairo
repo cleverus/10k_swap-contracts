@@ -22,7 +22,7 @@ from interfaces.Il0kPair import Il0kPair
 from libraries.l0k_library import l0kLibrary
 
 #
-# Storage
+# Storage methods
 #
 
 @storage_var
